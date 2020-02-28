@@ -22,6 +22,7 @@
 # Reference for:
 #  DCOM
 #
+
 from __future__ import division
 from __future__ import print_function
 import sys
@@ -43,6 +44,18 @@ from six import PY2
 OUTPUT_FILENAME = '__' + str(time.time())
 CODEC = sys.stdout.encoding
 
+
+banner = """
+   ▄████████ ███    █▄      ███      ▄██████▄     ▄███████▄    ▄████████  ▄██████▄   ▄████████
+  ███    ███ ███    ███ ▀█████████▄ ███    ███   ███    ███   ███    ███ ███    ███ ███    ███
+  ███    ███ ███    ███    ▀███▀▀██ ███    ███   ███    ███   ███    ███ ███    ███ ███    █▀
+  ███    ███ ███    ███     ███   ▀ ███    ███   ███    ███  ▄███▄▄▄▄██▀ ███    ███ ███
+▀███████████ ███    ███     ███     ███    ███ ▀█████████▀  ▀▀███▀▀▀▀▀   ███    ███ ███
+  ███    ███ ███    ███     ███     ███    ███   ███        ▀███████████ ███    ███ ███    █▄
+  ███    ███ ███    ███     ███     ███    ███   ███          ███    ███ ███    ███ ███    ███
+  ███    █▀  ████████▀     ▄████▀    ▀██████▀   ▄████▀        ███    ███  ▀██████▀  ████████▀
+                                                              ███    ███
+"""
 
 PROC_PATH = "./procdump64.exe"
 
@@ -360,6 +373,7 @@ def load_smbclient_auth_file(path):
 if __name__ == '__main__':
     # Init the example's logger theme
     logger.init()
+    print(banner)
     print(version.BANNER)
 
     parser = argparse.ArgumentParser(add_help = True, description = "Executes a semi-interactive shell using Windows "
