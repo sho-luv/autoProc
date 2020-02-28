@@ -11,7 +11,7 @@
 ```
 <h4 align="center">Auto All The Procs</h4>
 <p align="center">
-  <a href="https://twitter.com/lydericlefebvre">
+  <a href="https://twitter.com/sho_luv">
     <img src="https://img.shields.io/badge/Twitter-%40sho_luv-blue.svg">
   </a>
 </p>
